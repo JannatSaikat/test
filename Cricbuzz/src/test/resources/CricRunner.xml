@@ -8,7 +8,7 @@
 
     <test name="Home page" preserve-order="true">
         <classes>
-            <class name="testBase.TestHomePage"/>
+            <class name="TestTarget.TestHome"/>
         </classes>
     </test>
 </suite>

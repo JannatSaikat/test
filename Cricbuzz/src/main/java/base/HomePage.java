@@ -29,7 +29,7 @@ public class HomePage extends MobileAPI2{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-      //  TestLogger.log(getClass().getSimpleName() + ": newTab" + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+       // TestLogger.log(getClass().getSimpleName() + ": newTab" + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
 
         appiumDriver.navigate().back();
 

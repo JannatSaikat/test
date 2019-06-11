@@ -24,7 +24,7 @@ public class AutomateCall {
         AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(url,ds);
         Thread.sleep(5000);
 
-        driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.TextView\n")).click();
+//        driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.TextView\n")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//android.widget.TextView[@text=Abm Vai Pnt]")).click();
         driver.findElement(By.xpath("//android.widget.TextView[@text=+1 631-335-6832]")).click();
