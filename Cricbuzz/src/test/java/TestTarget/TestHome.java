@@ -22,7 +22,7 @@ public class TestHome extends MobileAPI2{
         home.clickSignIn();
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testsigninpermanent(){
         home.signinpermanent("jannatsaikat@gmail.com", "PasswordForEveryone");
     }

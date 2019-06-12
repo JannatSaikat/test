@@ -78,7 +78,7 @@ public class MobileAPI2 {
             capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
             capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
             capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);
-            capabilities.setCapability(MobileCapabilityType.APP, "/Users/alifnabila/Downloads/MobileAutomationPractice-master/Generic/src/main/resources/Target.apk");
+            capabilities.setCapability(MobileCapabilityType.APP, "/Users/alifnabila/Downloads/MobileAutomationPractice-master/Generic/src/main/resources/Cricbuzz.apk");
             appiumDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
 
         } else {
@@ -233,8 +233,12 @@ public class MobileAPI2 {
         locator.click();
     }
 
-    public void sleep(int sec) throws InterruptedException {
-        Thread.sleep(1000 * sec);
+    public void sleep(int sec)  {
+        try {
+            Thread.sleep(1000 * sec);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void typeByXpath(String locator, String value) {

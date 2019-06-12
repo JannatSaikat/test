@@ -19,6 +19,11 @@ public class TestHomePage extends MobileAPI2 {
         homePage.theme();
     }
 
+    @Test
+    public void testfixtures(){
+        homePage.fixtures();
+    }
+
     @Test(enabled = true)
     public void testMatch(){
         homePage.matches();
